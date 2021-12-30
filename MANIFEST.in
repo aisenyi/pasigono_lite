@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include pasigono_lite *.css
+recursive-include pasigono_lite *.csv
+recursive-include pasigono_lite *.html
+recursive-include pasigono_lite *.ico
+recursive-include pasigono_lite *.js
+recursive-include pasigono_lite *.json
+recursive-include pasigono_lite *.md
+recursive-include pasigono_lite *.png
+recursive-include pasigono_lite *.py
+recursive-include pasigono_lite *.svg
+recursive-include pasigono_lite *.txt
+recursive-exclude pasigono_lite *.pyc
