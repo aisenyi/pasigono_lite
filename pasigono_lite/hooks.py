@@ -174,7 +174,7 @@ user_data_fields = [
 #For jinja printing
 jenv = {
 	"methods": [
-		"money_in_words:pasigono.custom_scripts.amount_in_words.money_in_words",
+		"money_in_words:pasigono_lite.custom_scripts.amount_in_words.money_in_words",
 	]
 }
 
