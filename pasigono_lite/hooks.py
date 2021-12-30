@@ -89,13 +89,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"AccountsController": {
+		"validate": "pasigono_lite.custom_scripts.amount_in_words.validate"
+	},
+}
 
 # Scheduled Tasks
 # ---------------
@@ -172,4 +170,11 @@ user_data_fields = [
 # auth_hooks = [
 # 	"pasigono_lite.auth.validate"
 # ]
+
+#For jinja printing
+jenv = {
+	"methods": [
+		"money_in_words:pasigono.custom_scripts.amount_in_words.money_in_words",
+	]
+}
 
